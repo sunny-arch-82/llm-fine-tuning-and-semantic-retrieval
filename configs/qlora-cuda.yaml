@@ -1,0 +1,16 @@
+# Optional CUDA path; install uv sync --extra cuda and verify GPU/bitsandbytes support.
+seed: 20260929
+model_name: HuggingFaceTB/SmolLM2-135M-Instruct
+embedding_model: sentence-transformers/all-MiniLM-L6-v2
+data_dir: data/sample
+output_dir: outputs/qlora-demo
+max_length: 256
+max_new_tokens: 80
+batch_size: 2
+gradient_accumulation_steps: 2
+learning_rate: 0.0002
+epochs: 1
+lora_r: 8
+lora_alpha: 16
+lora_dropout: 0.05
+quantization: 4bit

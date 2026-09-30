@@ -1,0 +1,16 @@
+{"id": "db_pool-06", "relevance": {"db_pool-primary": 2, "db_pool-secondary": 1}, "text": "Web handlers wait for a free database handle while query runtimes remain flat."}
+{"id": "db_pool-07", "relevance": {"db_pool-primary": 2, "db_pool-secondary": 1}, "text": "Most sessions are in use; application threads block borrowing database slots."}
+{"id": "upstream_timeout-06", "relevance": {"upstream_timeout-primary": 2, "upstream_timeout-secondary": 1}, "text": "Checkout stalls on a remote charge call, despite normal local database timings."}
+{"id": "upstream_timeout-07", "relevance": {"upstream_timeout-primary": 2, "upstream_timeout-secondary": 1}, "text": "An upstream provider response exceeds the configured client deadline."}
+{"id": "restart_loop-06", "relevance": {"restart_loop-primary": 2, "restart_loop-secondary": 1}, "text": "The application briefly starts, then the pod is relaunched over and over."}
+{"id": "restart_loop-07", "relevance": {"restart_loop-primary": 2, "restart_loop-secondary": 1}, "text": "Short-lived containers keep getting recreated; health never stays green."}
+{"id": "tls_cert-06", "relevance": {"tls_cert-primary": 2, "tls_cert-secondary": 1}, "text": "The client cannot verify the server's trust chain during encrypted setup."}
+{"id": "tls_cert-07", "relevance": {"tls_cert-primary": 2, "tls_cert-secondary": 1}, "text": "Calls fail at the handshake stage after a certificate swap."}
+{"id": "queue_backlog-06", "relevance": {"queue_backlog-primary": 2, "queue_backlog-secondary": 1}, "text": "Jobs wait progressively longer as processing throughput drops below arrival rate."}
+{"id": "queue_backlog-07", "relevance": {"queue_backlog-primary": 2, "queue_backlog-secondary": 1}, "text": "Backlogged events accumulate; the oldest item's age rises."}
+{"id": "disk_full-06", "relevance": {"disk_full-primary": 2, "disk_full-secondary": 1}, "text": "A mounted disk has no room left for fresh artifacts or logs."}
+{"id": "disk_full-07", "relevance": {"disk_full-primary": 2, "disk_full-secondary": 1}, "text": "Temporary file creation fails after the filesystem fills up."}
+{"id": "dns_failure-06", "relevance": {"dns_failure-primary": 2, "dns_failure-secondary": 1}, "text": "An internal hostname no longer resolves for one workload."}
+{"id": "dns_failure-07", "relevance": {"dns_failure-primary": 2, "dns_failure-secondary": 1}, "text": "Traffic fails at address lookup before opening a socket."}
+{"id": "rate_limit-06", "relevance": {"rate_limit-primary": 2, "rate_limit-secondary": 1}, "text": "High request bursts trigger provider throttling instead of a network timeout."}
+{"id": "rate_limit-07", "relevance": {"rate_limit-primary": 2, "rate_limit-secondary": 1}, "text": "The service returns 429 and indicates when the client may try again."}

@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling>=1.25,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "modelforge-portfolio"
+version = "0.1.0"
+description = "Semantic troubleshooting retrieval and small language model adaptation"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = "MIT"
+dependencies = [
+  "accelerate>=1.1,<2",
+  "datasets>=3.2,<5",
+  "numpy>=1.26,<3",
+  "peft>=0.14,<0.19",
+  "pyyaml>=6,<7",
+  "scikit-learn>=1.5,<2",
+  "sentence-transformers>=3.4,<6",
+  "torch>=2.4,<3",
+  "transformers>=4.48,<5",
+]
+
+[project.optional-dependencies]
+cuda = ["bitsandbytes>=0.45,<0.50"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
+
+[project.scripts]
+modelforge = "modelforge.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/modelforge"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

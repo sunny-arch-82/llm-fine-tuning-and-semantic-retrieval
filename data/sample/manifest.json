@@ -1,0 +1,14 @@
+{
+  "origin": "Original fictional examples authored for ModelForge; no imported tickets or runbooks.",
+  "license": "MIT (original project data)",
+  "seed": 20260929,
+  "split": "Five train, one validation, two test phrasing variants per family; groups are ticket IDs.",
+  "counts": {
+    "families": 8,
+    "passages": 16,
+    "train": 40,
+    "validation": 8,
+    "test": 16
+  },
+  "limitations": "Small templated corpus; labels and guide prose share author and taxonomy."
+}

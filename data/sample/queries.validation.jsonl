@@ -1,0 +1,8 @@
+{"id": "db_pool-05", "relevance": {"db_pool-primary": 2, "db_pool-secondary": 1}, "text": "Requests hang before SQL starts, and the pool is at capacity."}
+{"id": "upstream_timeout-05", "relevance": {"upstream_timeout-primary": 2, "upstream_timeout-secondary": 1}, "text": "The external API stops replying quickly; our worker times out after waiting."}
+{"id": "restart_loop-05", "relevance": {"restart_loop-primary": 2, "restart_loop-secondary": 1}, "text": "A container cycles between starting and stopped, with the restart count increasing."}
+{"id": "tls_cert-05", "relevance": {"tls_cert-primary": 2, "tls_cert-secondary": 1}, "text": "Connections fail before HTTP when the presented identity does not match the host."}
+{"id": "queue_backlog-05", "relevance": {"queue_backlog-primary": 2, "queue_backlog-secondary": 1}, "text": "The work queue drains more slowly than new items are submitted."}
+{"id": "disk_full-05", "relevance": {"disk_full-primary": 2, "disk_full-secondary": 1}, "text": "The service logs ENOSPC and cannot create new files."}
+{"id": "dns_failure-05", "relevance": {"dns_failure-primary": 2, "dns_failure-secondary": 1}, "text": "The resolver cannot find the endpoint's address, though the machine answers by IP."}
+{"id": "rate_limit-05", "relevance": {"rate_limit-primary": 2, "rate_limit-secondary": 1}, "text": "The client receives too many requests responses and a cooldown header."}
